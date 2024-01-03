@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main_nav container">
+            <a href="#" class="company_img">
+                <img src="logo.png" onclick="reload()" class="logo_img" alt="logo">
+            </a>
+            <div class="nav_links">
+                <ul class="nav_ul">
+                    <li class="nav_item" onclick="onNavItemClick('ipl')" id="ipl">IPL</li>
+                    <li class="nav_item" onclick="onNavItemClick('finance')" id="finance">Finance</li>
+                    <li class="nav_item" onclick="onNavItemClick('politics')" id="politics">Politics</li>
+                </ul>
+            </div>
+            <div class="search_bar">
+                <input type="text" class="news_input" placeholder="e.g Technalogy">
+                <button class="search_button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards_container container flex"></div>     
+    </main>
+
+    <template id="template_news_card">
+        <div class="card">
+            <div class="card_header">
+                <img src="https://via.placeholder.com/400x200" id="card_img" alt="img">
+            </div>
+            <div class="card_content">
+                <h3 id="news_title">Card Title</h3>
+                <h5 id="news_source">Aman is Front-End Developer</h5>
+                <p id="news_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloremque perspiciatis blanditiis, vitae eum ratione maiores neque cumque animi. Molestias.</p>
+            </div>
+        </div>        
+    </template>
+<script src="script.js"></script>
+</body>
+</html>
